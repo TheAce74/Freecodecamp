@@ -1,0 +1,106 @@
+#main {
+    background-color: rgba(128, 128, 128, 0.12);
+    margin: 30px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#title {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 35px;
+    color: rgba(0, 0, 0, .8);
+}
+
+main p {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 6px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, .8);
+}
+
+#img-div {
+    width: 97%;
+    margin: auto;
+    background: white;
+}
+
+#image {
+    max-width: 98%;
+    display: block;
+    margin: auto;
+    padding: 0 1%;
+}
+
+#img-caption {
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, .8);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 95%;
+    margin: auto;
+}
+
+#tribute-info {
+    width:80%;
+    margin: auto;
+    color: rgba(0, 0, 0, .8);
+}
+
+#tribute-info h2 {
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+    padding: 38px 0;
+}
+
+#tribute-info ul, #tribute-info blockquote {
+    font-size: 14px;
+    font-weight: 200px;
+}
+
+#tribute-info ul li {
+    padding-top: 20px;
+    word-spacing: 1.5px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#tribute-info ul li:first-child {
+    padding-top: 0;
+}
+
+#tribute-info ul li strong {
+    font-weight: 700;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 38px 0;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+cite {
+    display: block;
+    padding-top: 20px;
+}
+
+cite::before {
+    content: "-- ";
+}
+
+p.p {
+    font-size: 17px;
+    font-weight: 800;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, .9);
+    line-height: 1.5;
+}
+
+p.p a {
+    color: rgb(18, 127, 163);
+}
