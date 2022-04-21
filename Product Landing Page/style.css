@@ -1,0 +1,258 @@
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(128, 128, 128, .1);
+    color: rgba(4, 9, 30, 0.9);
+}
+
+#header {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 20px;
+    position: fixed;
+    background-color: #eee;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    z-index:3;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#header-img {
+    width:270px;
+    height: 35px;
+}
+
+#nav-bar {
+    padding-right: 20px;
+}
+
+#nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: auto 25px;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: rgba(4, 9, 30, 0.9);
+}
+
+#nav-bar ul li::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: .5s;
+    margin: auto;
+    margin-top: 2px;
+}
+
+#nav-bar ul li:hover::after {
+    width: 100%;
+}
+
+h1 {
+    width:70%;
+    margin: 30px auto 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+#form {
+    width:60%;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+#email {
+    width: 20em;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+#email:focus {
+    outline: .5px ridge black;
+}
+
+#submit {
+    width: 9em;
+    border: 2px solid black;
+    background: linear-gradient(to right, transparent 50%, rgba(216, 80, 30, 0.9) 50%);
+    background-size: 200%;
+    background-position: left;
+    padding: .4em;
+    border-radius: 7px;
+    font-weight: 690;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#submit:hover {
+    background-position: right;
+    color: white;
+}
+
+.fa-solid {
+    color:rgba(216, 80, 30, 0.9);
+    margin-right: 20px;
+    font-size: 2.5em;
+}
+
+main {
+    position: relative;
+    margin-top: 80px;
+}
+
+section, footer {
+    width: 80%;
+    margin: auto;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+#Features p {
+    margin-left: 50px;
+    margin-top: 0;
+}
+
+#How_It_Works {
+    margin-top: 50px;
+    height: 33em;
+    padding-top: 30px;
+}
+
+#How_It_Works iframe {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+#Pricing {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#price-item {
+    border: 1px solid black;
+    flex-basis: 31%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h3 {
+    background-color: rgba(128, 128, 128, .2);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 19px;
+}
+
+h4 {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#price-item button {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#price-item .button {
+    width: 5em;
+    border: 1px solid black;
+    font-weight: 400;
+}
+
+footer {
+    display: block;
+    background-color: rgba(128, 128, 128, .2);
+    text-align: right;
+    margin-bottom: -20px;
+    padding: 20px;
+}
+
+#footer-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#footer-nav ul li:last-child {
+    margin-right: 0;
+}
+
+#footer-nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#footer-nav ul li a:hover {
+    color: black;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+@media screen and (max-width:700px) {
+    #header {
+        flex-direction: column;
+        vertical-align: middle;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-bar ul li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+ 
+    main {
+        margin-top: 180px;
+    }
+
+    #Pricing {
+        flex-direction: column;
+    }
+
+    #price-item {
+        margin-top: 30px;
+    }
+    
+    #email {
+        width: 80%;
+    }
+}
