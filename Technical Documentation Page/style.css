@@ -1,0 +1,119 @@
+body {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top:0;
+    width:400px;
+    z-index: 2;
+    background-color: white;
+    height: 100vh;
+    padding-top: 20px;
+    text-align: center;
+    overflow: scroll;
+}
+
+h1.hidden {
+    display: none;
+}
+
+#navbar h1, #navbar .h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 1.27em;
+    text-align: left;
+    border-top: 2px solid black;
+    margin-left: -40px;
+    padding: 15px;
+    padding-left: 50px;
+    font-weight: 450;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: rgba(4, 9, 30, .85);
+}
+
+#navbar ul li a:hover {
+    color: black;
+}
+
+#main-doc {
+    padding-left: 410px;
+    padding-right:20px;
+}
+
+header.header {
+    padding-top: 20px;
+    font-size: 1.7em;
+}
+
+p, code, #main-doc li {
+    margin-top: 20px;
+    color: rgba(4, 9, 30, .85);
+    line-height: 1.4;
+    text-align: justify;
+}
+
+code {
+    display: block;
+    font-size: 12px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, .1);
+    height: 40px;
+    text-align: left;
+    line-height: 2;
+}
+
+#Reference {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:700px) {
+    #navbar {
+        position: absolute;
+        width:97vw;
+        background-color: white;
+        height: 38vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-bottom: 3px solid black;
+    }
+
+    #navbar header.h1 {
+        display: none;
+    }
+
+    h1.hidden {
+        position: absolute;
+        padding-top: 10px;
+        top:-19px;
+        left:0;
+        text-align: center;
+        z-index: 13;
+        display: block;
+        width:100%;
+        background-color: white;
+        height: 1.7em;
+    }
+
+    #navbar ul li:first-child {
+        margin-top: 40px;
+        border-top: 3px solid black;
+    }
+
+    #main-doc {
+        position: relative;
+        padding-left: 20px;
+        padding-right:20px;
+        height: 62vh;
+        margin-top: 270px;
+    }
+}
