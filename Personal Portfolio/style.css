@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    background-color: rgb(194, 28, 70);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background-color: rgb(194, 28, 70);
+    height: fit-content;
+}
+
+#navbar ul {
+    text-align: right;
+    margin-right: 20px;
+}
+
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    padding: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#navbar ul li a:hover {
+    background-color: rgba(33, 82, 189, 0.795);
+}
+
+#welcome-section {
+    max-width: 100vw;
+    display: block;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(14, 12, 12);
+}
+
+h1 {
+    margin: inherit;
+    padding-top: 300px;
+    font-size: 60px;
+}
+
+#welcome-section p {
+    color: rgb(194, 28, 70);
+    font-weight: 100;
+    font-style: italic;
+    font-size: 28px;
+}
+
+#projects {
+    width:100%;
+    background-color: rgba(25, 66, 201, 0.842);
+}
+
+h2{
+    margin: inherit;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 550;
+    padding-top: 90px;
+}
+
+#Work {
+    border-bottom: 2px solid white;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    row-gap: 50px;
+}
+
+.project-tile {
+    background-color: rgb(34, 34, 34);
+    width: 80%;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.753);
+}
+
+.project-tile img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-tile p a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+.project-tile p a span {
+    color: rgb(194, 28, 70);
+    display: none;
+    font-weight: 700;
+}
+
+.project-tile p a:hover span {
+    display: inline-block;
+}
+
+#projects .button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#projects .button {
+    margin: 8px auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#projects button {
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-weight: 600;
+    border-radius: 80px;
+}
+
+#projects button:hover {
+    background-color: rgb(194, 28, 70);
+    transition: .7s;
+}
+
+#projects button:hover span {
+    padding-left: 4px;
+}
+
+#Contact {
+    background-color: rgb(34, 34, 34);
+    margin-top: -8px;
+    padding-bottom: 30px;
+    padding-top: 110px;
+}
+
+#Contact h2{
+    padding-top: 50px;
+}
+
+
+#Contact p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#Contact nav ul {
+    display: flex;
+    margin-right: 0;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Contact nav ul li {
+    flex-basis: 33%;
+    list-style-type: none;
+    margin-top: 60px;
+    font-size: 19px;
+}
+
+#Contact nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+#Contact nav ul li:hover {
+    transform: translateY(7px);
+    transition: .5s;
+}
+
+.fa-brands, .fa-solid {
+    padding-right: 4px;
+}
+
+footer {
+    background-color: rgb(34, 34, 34);
+    margin-top: 5px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+footer p.one {
+    flex-basis: 65%;
+    padding-left: 35px;
+}
+
+footer p.two {
+    flex-basis: 25%;
+}
+
+@media screen and (max-width:780px) {
+    #Work {
+        border-bottom: 2px solid white;
+        width: 70%;
+        font-size: 30px;
+    }
+
+.grid {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#Contact h2{
+    font-size: 30px;
+}
+
+#Contact p {
+    font-size: 16px;
+}
+
+#Contact nav ul li {
+    font-size: 17px;
+}
+}
